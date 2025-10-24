@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+
 import emailjs from "emailjs-com";
+import { useState } from "react";
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -18,9 +20,9 @@ const Contact = () => {
     e.preventDefault();
     setStatus("Sending...");
 
-    const serviceID = "service_431pnqe";     
-    const templateID = "template_93slb8e";   
-    const publicKey = "ZMbXIoU_7EYSbPCiN";    
+    const serviceID = "service_431pnqe";
+    const templateID = "template_93slb8e";
+    const publicKey = "ZMbXIoU_7EYSbPCiN";
 
     emailjs
       .send(serviceID, templateID, formData, publicKey)
@@ -40,24 +42,32 @@ const Contact = () => {
     <div
       id="Contact"
       className="max-w-xl mx-auto mt-16 p-10 bg-gray-100 rounded-xl shadow-lg text-center"
+      data-aos="fade-up"
     >
-      <h2 className="text-4xl font-extrabold mb-8 text-gray-800">
+      <h2
+        data-aos="fade-down"
+        data-aos-delay="200"
+        className="text-4xl font-extrabold mb-8 text-gray-800"
+      >
         Contact Me
       </h2>
 
-      {/* Contact Info */}
-      <div className="mb-6">
+      <div data-aos="fade-up" data-aos-delay="400" className="mb-6">
         <h3 className="text-2xl font-semibold mb-2">WhatsApp</h3>
         <p className="text-xl text-gray-700">+8801881799990</p>
       </div>
 
-      <div className="mb-10">
+      <div data-aos="fade-up" data-aos-delay="600" className="mb-10">
         <h3 className="text-2xl font-semibold mb-2">Email</h3>
         <p className="text-xl text-gray-700">safikolislam72@gmail.com</p>
       </div>
 
-      {/* Contact Form */}
-      <form onSubmit={handleSubmit} className="text-left space-y-4">
+      <form
+        onSubmit={handleSubmit}
+        className="text-left space-y-4"
+        data-aos="fade-up"
+        data-aos-delay="800"
+      >
         <input
           type="text"
           name="name"
@@ -102,6 +112,7 @@ const Contact = () => {
 };
 
 export default Contact;
+
 
 
 

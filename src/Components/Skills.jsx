@@ -17,57 +17,96 @@ const Skills = () => {
     { name: "VS Code", level: 85 },
   ];
 
-  const SkillBar = ({ skill }) => (
-    <div className="mb-4">
+  const SkillBar = ({ skill, delay }) => (
+    <div
+      className="mb-4"
+      data-aos="fade-right"
+      data-aos-delay={delay}
+      data-aos-duration="800"
+    >
       <div className="flex justify-between mb-1">
         <span className="text-gray-800 font-medium">{skill.name}</span>
         <span className="text-gray-600 text-sm">{skill.level}%</span>
       </div>
-      <div className="w-full bg-gray-200 rounded-full h-3">
+      <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
         <div
-          className="h-3 rounded-full bg-gradient-to-r from-blue-400 to-purple-500 transition-all duration-500"
-          style={{ width: `${skill.level}%` }}
+          className="h-3 rounded-full bg-gradient-to-r from-blue-400 to-purple-500 transition-all duration-[2000ms]"
+          style={{
+            width: `${skill.level}%`,
+          }}
         ></div>
       </div>
     </div>
   );
 
   return (
-    <section  data-aos="fade-up"
-     data-aos-duration="3000" className="bg-white mt-10 py-16 px-6" id="Skill">
+    <section
+      id="Skill"
+      className="bg-white mt-10 py-16 px-6"
+      data-aos="fade-up"
+      data-aos-duration="1200"
+    >
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
+        <h2
+          className="text-4xl font-bold text-center text-gray-800 mb-12"
+          data-aos="fade-down"
+          data-aos-delay="200"
+        >
           My <span className="text-blue-500">Skills</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-          {/* Frontend */}
-          <div className="bg-white rounded-2xl shadow-lg p-6 hover:scale-105 transition-transform duration-300">
-            <h3 className="text-2xl font-semibold text-blue-600 mb-6 text-center">
+    
+          <div
+            className="bg-white rounded-2xl shadow-lg p-6 hover:scale-105 transition-transform duration-300"
+            data-aos="fade-right"
+            data-aos-delay="400"
+          >
+            <h3
+              className="text-2xl font-semibold text-blue-600 mb-6 text-center"
+              data-aos="zoom-in"
+              data-aos-delay="500"
+            >
               Frontend
             </h3>
             {frontend.map((skill, index) => (
-              <SkillBar key={index} skill={skill} />
+              <SkillBar key={index} skill={skill} delay={index * 150 + 600} />
             ))}
           </div>
 
-          {/* Backend */}
-          <div className="bg-white rounded-2xl shadow-lg p-6 hover:scale-105 transition-transform duration-300">
-            <h3 className="text-2xl font-semibold text-purple-600 mb-6 text-center">
+    
+          <div
+            className="bg-white rounded-2xl shadow-lg p-6 hover:scale-105 transition-transform duration-300"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <h3
+              className="text-2xl font-semibold text-purple-600 mb-6 text-center"
+              data-aos="zoom-in"
+              data-aos-delay="700"
+            >
               Backend
             </h3>
             {backend.map((skill, index) => (
-              <SkillBar key={index} skill={skill} />
+              <SkillBar key={index} skill={skill} delay={index * 150 + 800} />
             ))}
           </div>
 
-          {/* Tools */}
-          <div className="bg-white rounded-2xl shadow-lg p-6 hover:scale-105 transition-transform duration-300">
-            <h3 className="text-2xl font-semibold text-pink-600 mb-6 text-center">
+         
+          <div
+            className="bg-white rounded-2xl shadow-lg p-6 hover:scale-105 transition-transform duration-300"
+            data-aos="fade-left"
+            data-aos-delay="800"
+          >
+            <h3
+              className="text-2xl font-semibold text-pink-600 mb-6 text-center"
+              data-aos="zoom-in"
+              data-aos-delay="900"
+            >
               Tools
             </h3>
             {tools.map((skill, index) => (
-              <SkillBar key={index} skill={skill} />
+              <SkillBar key={index} skill={skill} delay={index * 150 + 1000} />
             ))}
           </div>
         </div>
@@ -77,3 +116,4 @@ const Skills = () => {
 };
 
 export default Skills;
+
