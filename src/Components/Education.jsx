@@ -16,7 +16,7 @@ const Education = () => {
             Bachelor of Science (B.Sc.)
           </h3>
           <p className="text-blue-600 font-medium mt-1">
-            Department of Mathematics, Physics, and Botany
+            Major: Mathematics, Physics, and Botany
           </p>
           <p className="text-gray-600 mt-2">
             Narsingdi Govt. College

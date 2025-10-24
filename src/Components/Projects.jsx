@@ -13,7 +13,7 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-          {/* Project 1 */}
+     
           <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
             <img
               src={Pimage1}
@@ -45,7 +45,7 @@ const Projects = () => {
 
               <div className="mt-auto pt-4 border-t border-gray-200 flex gap-4">
                 <a
-                  href="https://courageous-vacherin-33de11.netlify.app/"
+                  href="https://admirable-taffy-bafd88.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full text-center bg-blue-500 text-white font-semibold py-2 px-4 rounded-md transition-colors duration-300 hover:bg-blue-600"
@@ -64,7 +64,7 @@ const Projects = () => {
             </div>
           </div>
 
-          {/* Project 2 */}
+       
           <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
             <img
               src={pimg2}
@@ -115,7 +115,7 @@ const Projects = () => {
             </div>
           </div>
 
-          {/* Project 3 */}
+     
           <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
             <img
               src={Pimg3}
