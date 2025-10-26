@@ -96,7 +96,7 @@ const Projects = () => {
 
               <div className="mt-auto pt-4 border-t border-gray-200 flex gap-4">
                 <a
-                  href="https://sensational-shortbread-2fd55e.netlify.app/"
+                  href="https://sage-gecko-acb351.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full text-center bg-blue-500 text-white font-semibold py-2 px-4 rounded-md transition-colors duration-300 hover:bg-blue-600"
@@ -104,7 +104,7 @@ const Projects = () => {
                   Live Project
                 </a>
                 <a
-                  href="https://github.com/safikolislam/rentify-car"
+                  href="https://github.com/safikolislam/car-rental"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full text-center bg-gray-700 text-white font-semibold py-2 px-4 rounded-md transition-colors duration-300 hover:bg-gray-800"
