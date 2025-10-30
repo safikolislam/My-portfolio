@@ -28,7 +28,7 @@ const Contact = () => {
       .send(serviceID, templateID, formData, publicKey)
       .then(
         () => {
-          setStatus("✅ Message sent successfully!");
+          setStatus("Message sent successfully!");
           setFormData({ name: "", email: "", message: "" });
         },
         (error) => {
@@ -41,13 +41,13 @@ const Contact = () => {
   return (
     <div
       id="Contact"
-      className="max-w-xl mx-auto mt-16 p-10 bg-gray-100 rounded-xl shadow-lg text-center"
+      className="max-w-xl mx-auto mt-16 p-10 bg-base-100 rounded-xl shadow-lg text-center"
       data-aos="fade-up"
     >
       <h2
         data-aos="fade-down"
         data-aos-delay="200"
-        className="text-4xl font-extrabold mb-8 text-gray-800"
+        className="text-4xl font-extrabold mb-8 text-blue-500"
       >
         Contact Me
       </h2>
@@ -100,7 +100,7 @@ const Contact = () => {
 
         <button
           type="submit"
-          className="w-full py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition"
+          className="w-full py-3 bg-blue-400 text-white font-semibold rounded-lg hover:bg-blue-700 transition"
         >
           Send Message
         </button>
@@ -112,6 +112,11 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
+
+
+
 
 
 

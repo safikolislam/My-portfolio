@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div className="fixed w-full top-0 left-0 z-50 bg-white/30 backdrop-blur-md shadow-md">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-     <div className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-300  to-blue-400">
+     <div className="text-2xl font-bold text-transparent bg-clip-text bg-blue-400">
   Safikol
 </div>
 
@@ -16,8 +16,8 @@ const Navbar = () => {
 <li>
   <a
     href="#Education"  
-    className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 
-               hover:from-blue-400 hover:to-purple-400 
+    className="text-transparent bg-clip-text bg-blue-400 
+              
                cursor-pointer transition-all duration-300 transform hover:scale-110 font-semibold text-lg"
   >
     Education
@@ -26,8 +26,8 @@ const Navbar = () => {
 <li>
   <a
     href="#Skill"  
-    className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 
-               hover:from-blue-400 hover:to-purple-400 
+    className="text-transparent bg-clip-text bg-blue-400 
+            
                cursor-pointer transition-all duration-300 transform hover:scale-110 font-semibold text-lg"
   >
     Skill
@@ -36,8 +36,8 @@ const Navbar = () => {
 <li>
   <a
     href="#Projects"  
-    className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 
-               hover:from-blue-400 hover:to-purple-400 
+    className="text-transparent bg-clip-text bg-blue-400 
+         
                cursor-pointer transition-all duration-300 transform hover:scale-110 font-semibold text-lg"
   >
     Projects
@@ -46,8 +46,8 @@ const Navbar = () => {
 <li>
   <a
     href="#Contact"  
-    className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 
-               hover:from-blue-400 hover:to-purple-400 
+    className="text-transparent bg-clip-text bg-blue-400
+             
                cursor-pointer transition-all duration-300 transform hover:scale-110 font-semibold text-lg"
   >
    Contact
@@ -95,8 +95,8 @@ const Navbar = () => {
          <li>
   <a
     href="#Education"  
-    className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 
-               hover:from-blue-400 hover:to-purple-400 
+    className="text-transparent bg-clip-text bg-blue-400 
+            
                cursor-pointer transition-all duration-300 transform hover:scale-110 font-semibold text-lg"
   >
     Education
@@ -105,8 +105,8 @@ const Navbar = () => {
 <li>
   <a
     href="#Skill"  
-    className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 
-               hover:from-blue-400 hover:to-purple-400 
+    className="text-transparent bg-clip-text bg-blue-400 
+            
                cursor-pointer transition-all duration-300 transform hover:scale-110 font-semibold text-lg"
   >
     Skill
@@ -115,8 +115,8 @@ const Navbar = () => {
 <li>
   <a
     href="#Projects"  
-    className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 
-               hover:from-blue-400 hover:to-purple-400 
+    className="text-transparent bg-clip-text bg-blue-400 
+            
                cursor-pointer transition-all duration-300 transform hover:scale-110 font-semibold text-lg"
   >
     Projects
@@ -125,8 +125,8 @@ const Navbar = () => {
 <li>
   <a
     href="#Contact"  
-    className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 
-               hover:from-blue-400 hover:to-purple-400 
+    className="text-transparent bg-blue-400 
+              
                cursor-pointer transition-all duration-300 transform hover:scale-110 font-semibold text-lg"
   >
    Contact
@@ -139,4 +139,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
 

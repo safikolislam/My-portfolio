@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import img from "../assets/Safikol_islam_profile.png";
-import resumePDF from "../assets/SAFIKOL-ISLAM.pdf";
+
 
 const Hero = () => {
   const roles = [
@@ -20,7 +20,7 @@ const Hero = () => {
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-12">
           
-          {/* ===== Left Text Section ===== */}
+        
           <div
             className="md:w-1/2 text-center md:text-left"
             data-aos="fade-right"
@@ -40,7 +40,7 @@ const Hero = () => {
               data-aos-delay="600"
             >
               A Passionate <br />
-              <span className="text-cyan-300 border-b-4 border-cyan-500 min-h-[50px] inline-block">
+              <span className="text-blue-400 border-b-4 border-blue-500 min-h-[50px] inline-block">
                 <Typewriter
                   words={roles}
                   loop={0}
@@ -65,9 +65,9 @@ const Hero = () => {
             </p>
 
             <a
-              href={resumePDF}
+              href="https://docs.google.com/document/d/11xqfeEhG4fyqYt0GFkOrGksoZSE_fjJs6-luwhjBM_c/edit?usp=sharing"
               download="Safikol_Islam_Resume.pdf"
-              className="whitespace-nowrap mt-5 inline-block w-40 px-4 py-2 bg-gradient-to-r from-blue-400 to-green-400 text-white rounded font-semibold transform transition duration-300 hover:scale-110 hover:from-purple-400 hover:to-cyan-400 text-center shadow-lg"
+              className="whitespace-nowrap mt-5 inline-block w-40 px-4 py-2 bg-blue-500 text-white rounded font-semibold transform transition duration-300 hover:scale-110 hover:from-purple-400 hover:to-cyan-400 text-center shadow-lg"
               data-aos="zoom-in"
               data-aos-delay="1000"
             >
@@ -75,14 +75,14 @@ const Hero = () => {
             </a>
           </div>
 
-          {/* ===== Right Image Section ===== */}
+       
           <div
             className="md:w-1/2 flex justify-center"
             data-aos="zoom-in"
             data-aos-delay="500"
           >
             <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
-              <div className="absolute inset-0 bg-cyan-500 rounded-full blur-2xl opacity-40 animate-pulse"></div>
+              <div className="absolute inset-0 bg-blue-500 rounded-full blur-2xl opacity-40 animate-pulse"></div>
               <img
                 className="relative w-full h-full object-cover rounded-full border-4 border-gray-300 shadow-2xl hover:scale-105 transition-transform duration-700"
                 src={img}

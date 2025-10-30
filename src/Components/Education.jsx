@@ -6,8 +6,8 @@ const Education = () => {
     <section data-aos="fade-up"
      data-aos-duration="3000" id="Education" className="bg-gray-100 py-16 px-6" >
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-gray-800 mb-12 flex justify-center items-center gap-3">
-          <GraduationCap className="text-blue-500 w-8 h-8" />
+        <h2 className="text-4xl font-bold text-blue-500 mb-12 flex justify-center items-center gap-3">
+        
           Education
         </h2>
 
@@ -32,4 +32,3 @@ const Education = () => {
 };
 
 export default Education;
-

@@ -9,7 +9,7 @@ const AboutMe = () => {
       id="about"
     >
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-gray-800 mb-8">About Me</h2>
+        <h2 className="text-4xl font-bold text-blue-500 mb-8">About Me</h2>
         <div className="text-lg text-gray-700 leading-relaxed space-y-4">
           <p>
             Hello! I'm <span className="font-semibold text-blue-600">Safikol Islam</span>,
@@ -55,4 +55,3 @@ const AboutMe = () => {
 };
 
 export default AboutMe;
-
