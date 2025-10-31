@@ -1,8 +1,8 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router";
-import Pimage1 from "../assets/Screenshot 2025-10-31 123222.png";
-import Pimg2 from "../assets/Screenshot 2025-10-31 122603.png";
-import Pimg3 from "../assets/Screenshot 2025-10-31 123146.png";
+import Pimage1 from "../assets/Medinest1.png";
+import Pimg2 from "../assets/Car2.png";
+import Pimg3 from "../assets/Recipe1.png";
 
 const ProjectDetails = () => {
   const { id } = useParams();
@@ -48,7 +48,7 @@ const ProjectDetails = () => {
   const project = projectsData.find((p) => p.id === parseInt(id)) || projectsData[0];
 
   return (
-    <section className="bg-slate-50 text-gray-900 py-16 px-4 min-h-screen">
+    <section className= "bg-slate-50 mt-5 text-gray-900 py-16 px-4 min-h-screen">
       <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-8">
         <img
           src={project.image}

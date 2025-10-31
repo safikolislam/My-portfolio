@@ -10,6 +10,7 @@ const Skills = () => {
 
   const backend = [
     { name: "Express JS", level: 75 },
+    {name:"MongoDB", level:50}
   ];
 
   const tools = [
@@ -81,7 +82,7 @@ const Skills = () => {
             data-aos-delay="600"
           >
             <h3
-              className="text-2xl font-semibold text-purple-600 mb-6 text-center"
+              className="text-2xl font-semibold text-blue-500 mb-6 text-center"
               data-aos="zoom-in"
               data-aos-delay="700"
             >
@@ -99,7 +100,7 @@ const Skills = () => {
             data-aos-delay="800"
           >
             <h3
-              className="text-2xl font-semibold text-pink-600 mb-6 text-center"
+              className="text-2xl font-semibold text-blue-600 mb-6 text-center"
               data-aos="zoom-in"
               data-aos-delay="900"
             >

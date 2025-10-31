@@ -4,9 +4,15 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 // Project images
-import Pimage1 from "../assets/Screenshot 2025-10-31 122638.png";
-import Pimg2 from "../assets/Screenshot 2025-10-31 122638.png";
-import Pimg3 from "../assets/Screenshot 2025-10-31 123146.png";
+import Fimg1 from "../assets/Medinest4.png";
+import Fimg2 from "../assets/Medinest3.png";
+import Fimg3 from "../assets/Medinest3.png";
+import Simg1 from "../assets/Car1.png";
+import Simg2 from "../assets/car2.png";
+import Simg3 from "../assets/Car3.png";
+import Timg1 from "../assets/Recipe1.png";
+import Timg2 from "../assets/Recipe2.png";
+import Timg3 from "../assets/Recipe5.png";
 
 const Projects = () => {
   const navigate = useNavigate();
@@ -15,7 +21,7 @@ const Projects = () => {
     {
       id: 1,
       name: "Medinest Healthcare Website",
-      images: [Pimage1, Pimg2, Pimg3], // Add actual Medinest images
+      images: [Fimg1, Fimg2, Fimg3], 
       description:
         "A full-stack healthcare appointment and management platform built with React, Express.js, and MongoDB.",
       client: "https://github.com/safikolislam/MediNest-Client",
@@ -24,7 +30,7 @@ const Projects = () => {
     {
       id: 2,
       name: "Car Rental",
-      images: [Pimg2, Pimage1, Pimg3], // Add actual Car Rental images
+      images: [Simg2, Simg1, Simg3], 
       description: "A car rental management system with admin and user dashboards.",
       client: "https://github.com/safikolislam/car-rental",
       server: "https://github.com/safikolislam/rentify-server",
@@ -32,7 +38,7 @@ const Projects = () => {
     {
       id: 3,
       name: "Recipe Book",
-      images: [Pimg3, Pimage1, Pimg2], // Add actual Recipe Book images
+      images: [Timg1, Timg2, Timg3], 
       description: "A recipe sharing app where users can explore and save dishes.",
       client: "https://github.com/safikolislam/Recipe-Book",
       server: "https://github.com/safikolislam/Recipe-Server",

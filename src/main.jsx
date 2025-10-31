@@ -1,19 +1,22 @@
 import React, { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router";
+import { BrowserRouter, Routes, Route } from "react-router"; 
 import App from "./App";
-
+import ProjectDetails from "./Components/ProjectDetails";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./index.css";
-import ProjectDetails from "./Components/ProjectDetails";
+
 
 AOS.init({
   duration: 2000,
   easing: "ease-in-out",
   once: true,
 });
+
+
+document.body.classList.add("montserrat-normal");
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -25,3 +28,4 @@ createRoot(document.getElementById("root")).render(
     </BrowserRouter>
   </StrictMode>
 );
+

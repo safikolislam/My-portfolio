@@ -1,7 +1,6 @@
 import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
-import img from "../assets/safikolislam (1) (1).png";
-
+import img from "../assets/Safikol_islam_profile.png";
 
 const Hero = () => {
   const roles = [
@@ -14,31 +13,19 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="mt-44 flex items-center font-sans overflow-hidden"
+      className="mt-24 md:mt-32 lg:mt-44 flex items-center font-sans overflow-hidden"
       data-aos="fade-up"
     >
-      <div className="container mx-auto px-6 lg:px-12">
+      <div className="container max-w-7xl mx-auto px-6 lg:px-10">
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-12">
           
-        
-          <div
-            className="md:w-1/2 text-center md:text-left"
-            data-aos="fade-right"
-            data-aos-delay="200"
-          >
-            <h2
-              className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight"
-              data-aos="fade-down"
-              data-aos-delay="400"
-            >
+      
+          <div className="md:w-1/2 text-center md:text-left" data-aos="fade-right" data-aos-delay="200">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight" data-aos="fade-down" data-aos-delay="400">
               Hi, I'm <span className="text-blue-400">Safikol Islam</span>
             </h2>
 
-            <h1
-              className="text-2xl sm:text-3xl lg:text-4xl font-semibold mt-4 text-gray-800"
-              data-aos="fade-up"
-              data-aos-delay="600"
-            >
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mt-4 text-gray-800" data-aos="fade-up" data-aos-delay="600">
               A Passionate <br />
               <span className="text-blue-400 border-b-4 border-blue-500 min-h-[50px] inline-block">
                 <Typewriter
@@ -53,21 +40,15 @@ const Hero = () => {
               </span>
             </h1>
 
-            <p
-              className="mt-6 text-lg text-gray-400 max-w-xl mx-auto md:mx-0"
-              data-aos="fade-up"
-              data-aos-delay="800"
-            >
-              I specialize in building dynamic and responsive web applications
-              using the MERN stack. My passion lies in crafting elegant
-              front-end experiences with React.js and robust back-end
-              services with Node.js and Express.js.
+            <p className="mt-6 text-lg text-gray-400 max-w-xl mx-auto md:mx-0" data-aos="fade-up" data-aos-delay="800">
+              I specialize in building dynamic and responsive web applications using the MERN stack. My passion lies in crafting elegant front-end experiences with React.js and robust back-end services with Node.js and Express.js.
             </p>
 
             <a
-              href="https://docs.google.com/document/d/11xqfeEhG4fyqYt0GFkOrGksoZSE_fjJs6-luwhjBM_c/edit?usp=sharing"
-              download="Safikol_Islam_Resume.pdf"
-              className="whitespace-nowrap mt-5 inline-block w-40 px-4 py-2 bg-blue-500 text-white rounded font-semibold transform transition duration-300 hover:scale-110 hover:from-purple-400 hover:to-cyan-400 text-center shadow-lg"
+              href="https://drive.google.com/uc?export=download&id=1duDx7uACLZI8ESqcKALJwNkrxMjGtojR"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="whitespace-nowrap mt-5 inline-block w-44 px-6 py-3 bg-blue-500 text-white rounded font-semibold transform transition duration-300 hover:scale-105 hover:bg-blue-600 text-center shadow-lg"
               data-aos="zoom-in"
               data-aos-delay="1000"
             >
@@ -75,12 +56,8 @@ const Hero = () => {
             </a>
           </div>
 
-       
-          <div
-            className="md:w-1/2 flex justify-center"
-            data-aos="zoom-in"
-            data-aos-delay="500"
-          >
+         
+          <div className="md:w-1/2 flex justify-center" data-aos="zoom-in" data-aos-delay="500">
             <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
               <div className="absolute inset-0 bg-blue-500 rounded-full blur-2xl opacity-40 animate-pulse"></div>
               <img
@@ -90,6 +67,7 @@ const Hero = () => {
               />
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -97,6 +75,7 @@ const Hero = () => {
 };
 
 export default Hero;
+
 
 
 
