@@ -1,6 +1,6 @@
 import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
-import img from "../assets/Safikol_islam_profile.png";
+import img from "../assets/safikolislam (1) (1).png";
 
 
 const Hero = () => {

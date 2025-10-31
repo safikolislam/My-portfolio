@@ -1,8 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router";
-import Pimage1 from "../assets/Screenshot 2025-10-17 103738.png";
-import Pimg2 from "../assets/Screenshot 2025-10-17 105904.png";
-import Pimg3 from "../assets/Screenshot 2025-10-17 105225.png";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+
+// Project images
+import Pimage1 from "../assets/Screenshot 2025-10-31 122638.png";
+import Pimg2 from "../assets/Screenshot 2025-10-31 122638.png";
+import Pimg3 from "../assets/Screenshot 2025-10-31 123146.png";
 
 const Projects = () => {
   const navigate = useNavigate();
@@ -11,7 +15,7 @@ const Projects = () => {
     {
       id: 1,
       name: "Medinest Healthcare Website",
-      image: Pimage1,
+      images: [Pimage1, Pimg2, Pimg3], // Add actual Medinest images
       description:
         "A full-stack healthcare appointment and management platform built with React, Express.js, and MongoDB.",
       client: "https://github.com/safikolislam/MediNest-Client",
@@ -20,18 +24,16 @@ const Projects = () => {
     {
       id: 2,
       name: "Car Rental",
-      image: Pimg2,
-      description:
-        "A car rental management system with admin and user dashboards.",
+      images: [Pimg2, Pimage1, Pimg3], // Add actual Car Rental images
+      description: "A car rental management system with admin and user dashboards.",
       client: "https://github.com/safikolislam/car-rental",
       server: "https://github.com/safikolislam/rentify-server",
     },
     {
       id: 3,
       name: "Recipe Book",
-      image: Pimg3,
-      description:
-        "A recipe sharing app where users can explore and save dishes.",
+      images: [Pimg3, Pimage1, Pimg2], // Add actual Recipe Book images
+      description: "A recipe sharing app where users can explore and save dishes.",
       client: "https://github.com/safikolislam/Recipe-Book",
       server: "https://github.com/safikolislam/Recipe-Server",
     },
@@ -59,15 +61,24 @@ const Projects = () => {
               key={project.id}
               className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl"
             >
-              <img
-                src={project.image}
-                alt={project.name}
-                className="w-full h-56 object-cover"
-              />
+              {/* React Carousel */}
+              <Carousel showThumbs={false} infiniteLoop autoPlay>
+                {project.images.map((img, index) => (
+                  <div key={index}>
+                    <img
+                      src={img}
+                      alt={`${project.name} screenshot ${index + 1}`}
+                      className="w-full h-56 object-cover"
+                    />
+                  </div>
+                ))}
+              </Carousel>
+
               <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-2xl font-bold text-blue-700 mb-4">
                   {project.name}
                 </h3>
+                <p className="text-gray-700 mb-4">{project.description}</p>
 
                 <div className="flex gap-2 mb-4">
                   <a
@@ -104,4 +115,5 @@ const Projects = () => {
 };
 
 export default Projects;
+
 

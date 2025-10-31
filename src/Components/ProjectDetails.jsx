@@ -1,8 +1,8 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router";
-import Pimage1 from "../assets/Screenshot 2025-10-17 103738.png";
-import Pimg2 from "../assets/Screenshot 2025-10-17 105904.png";
-import Pimg3 from "../assets/Screenshot 2025-10-17 105225.png";
+import Pimage1 from "../assets/Screenshot 2025-10-31 123222.png";
+import Pimg2 from "../assets/Screenshot 2025-10-31 122603.png";
+import Pimg3 from "../assets/Screenshot 2025-10-31 123146.png";
 
 const ProjectDetails = () => {
   const { id } = useParams();
